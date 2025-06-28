@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styleindex.css" />
+  <title>EcoGuia Procopense</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>EcoGuia Procopense</h1>
+    <br>
+    <h2>Encontre a ecologia em Cornélio</h2>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li>
+            <figure>
+              <img src="figs/home_icon.svg" alt="Icone Início" width="13" height="13">
+              <a href="#inicio">Início</a>
+            </figure>
+          </li>  
+          <li>
+            <figure>
+              <img src="figs/localization_icon.svg" alt="Icone Local" width="13" height="13">
+              <a href="#locais">Locais Sustentáveis</a>
+            </figure>
+          </li> 
+          <li>
+            <figure>
+              <img src="figs/about_us_icon.svg" alt="Icone Sobre" width="13" height="13">
+              <a href="#sobre">Sobre</a>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="figs/contact.svg" alt="Icone Contato" width="13" height="13">
+              <a href="#contato"s>Contato</a>
+            </figure>
+          </li>
+        </ul>
+
+        <div class="nav-end">
+          <div class="nav-admin">
+            <a href="admin.html">Admin</a>
+          </div>
+
+          <div class="nav-login">
+            <a href="login.html">Entrar</a>
+        </div>
+        </div>
+
+      </nav>
+
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Pesquisar por bairro ou tipo. ">
+    <button>Buscar</button>
+  </div>
+
+  <div class="filters">
+    <button onclick="filtrar('todos')">Todos</button>
+    <button onclick="filtrar('Feira')">Feiras</button>
+    <button onclick="filtrar('Coleta')">Coleta</button>
+    <button onclick="filtrar('Horta')">Hortas</button>
+  </div>
+  
+  <div id="locais"></div>
+
+  <div class="table">
+    <div class="cards">
+
+      <figure>
+        <img src="figs/organic_food_shop.jpg" alt="Feira Orgânica" width="250" height="250"> 
+      </figure>
+      <h3>Feira Orgânica do Centro</h3>
+      <p>Tipo: Feira</p>
+      <p>Bairro: Centro</p>
+      <p>Dias: Sáb e Dom</p>
+      <button>Saiba Mais</button>
+    
+    </div>
+  
+    <div class="cards">
+
+      <figure>
+        <img src="figs/recicling_point.jpg" alt="Ponto de Reciclagem" width="250" height="250"> 
+      </figure>
+      <h3>Ponto de Coleta Jardim Europa</h3>
+      <p>Tipo: Coleta</p>
+      <p>Bairro: Jardim Europa</p>
+      <p>Dias: Seg a Sex</p>
+      <button>Saiba Mais</button>
+    
+    </div>
+  
+    <div class="cards">
+
+      <figure>
+        <img src="figs/comunity_garden.jpg" alt="Horta Comunitária" width="250" height="250"> 
+      </figure>
+      <h3>Horta Comunitária - UTFPR</h3>
+      <p>Tipo: Horta</p>
+      <p>Bairro: Centro</p>
+      <p>Dias: Seg a Sáb</p>
+      <button>Saiba Mais</button>
+    
+    </div>
+
+    <div class="cards">
+
+      <figure>
+        <img src="figs/organic_food_shop.jpg" alt="Feira Orgânica" width="250" height="250"> 
+      </figure>
+      <h3>Feira da Estação</h3>
+      <p>Tipo: Feira</p>
+      <p>Bairro: Centro</p>
+      <p>Dias: Sáb</p>
+      <button>Saiba Mais</button>
+    
+    </div>
+
+    <div class="cards">
+
+      <figure>
+        <img src="figs/comunity_garden.jpg" alt="Horta Comunitária" width="250" height="250"> 
+      </figure>
+      <h3>Horta Comunitária - UENP</h3>
+      <p>Tipo: Horta</p>
+      <p>Bairro: Jardim Universitário</p>
+      <p>Dias: Seg a Sáb</p>
+      <button>Saiba Mais</button>
+    
+    </div>
+
+    <div class="cards">
+
+      <figure>
+        <img src="figs/recicling_point.jpg" alt="Ponto de Reciclagem" width="250" height="250"> 
+      </figure>
+      <h3>Ponto de Coleta Vila América</h3>
+      <p>Tipo: Coleta</p>
+      <p>Bairro: Vila América</p>
+      <p>Dias: Seg a Sex</p>
+      <button>Saiba Mais</button>
+    
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="cont_footer">
+    <a href="https://gtagenda2030.org.br/ods/">Objetivos ODS</a>
+    <a href="https://gtagenda2030.org.br/ods/ods11/">Sobre a ODS 11</a>
+    <a href="curriculum.html">Curriculum Vitae</a>
+    </div>
+    <p>Cornélio Procópio - 2025</p>
+  </footer>
+  
+</body>
+</html>

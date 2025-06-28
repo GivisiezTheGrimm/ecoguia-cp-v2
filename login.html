@@ -1,0 +1,89 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Guia Sustentável</title>
+  <link rel="stylesheet" href="css/stylelogin.css" />
+</head>
+
+
+<body>
+  <header>
+
+    <h1>EcoGuia Procopense</h1>
+    <br>
+    <h2>Encontre a ecologia em Cornélio</h2>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+          <li>
+            <figure>
+              <img src="figs/home_icon.svg" alt="Icone Início" width="13" height="13">
+              <a href="index.html">Início</a>
+            </figure>
+          </li>  
+          <li>
+            <figure>
+              <img src="figs/localization_icon.svg" alt="Icone Local" width="13" height="13">
+              <a href="index.html">Locais Sustentáveis</a>
+            </figure>
+          </li> 
+          <li>
+            <figure>
+              <img src="figs/about_us_icon.svg" alt="Icone Sobre" width="13" height="13">
+              <a href="#sobre">Sobre</a>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="figs/contact.svg" alt="Icone Contato" width="13" height="13">
+              <a href="#contato"s>Contato</a>
+            </figure>
+          </li>
+        </ul>
+      </nav>
+
+  </header>
+
+
+  <main>
+    <div class="container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Senha" required />
+        <button type="submit" href = "index.html">Entrar</button>
+      </form>
+    <a href="cadastro.html">Não tem uma conta? Cadastre-se</a>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = this.querySelectorAll('input')[0].value;
+      const senha = this.querySelectorAll('input')[1].value;
+      const usuario = JSON.parse(localStorage.getItem('usuario'));
+
+      if (usuario && usuario.email === email && usuario.senha === senha) {
+        alert('Login realizado com sucesso!');
+        window.location.href = 'index.html';
+      } else {
+        alert('Email ou senha inválidos!');
+      }
+    });
+  </script>
+
+  </main>
+  
+
+  <footer>
+    <div class="cont_footer">
+      <a href="https://gtagenda2030.org.br/ods/">Objetivos ODS</a>
+      <a href="https://gtagenda2030.org.br/ods/ods11/">Sobre a ODS 11</a>
+      <a href="curriculum.html">Curriculum Vitae</a>
+    </div>
+    <p>Cornélio Procópio - 2025</p>
+  </footer>
+  
+</body>
+</html>

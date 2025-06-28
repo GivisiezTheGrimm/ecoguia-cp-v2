@@ -1,0 +1,187 @@
+html, body{
+    height: 82%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    background: #e6f2e6;
+    margin: 0;
+    padding-top: 260px;
+}
+
+main {
+    flex: 1;
+}
+
+header{
+    position: fixed;
+    background: linear-gradient(rgba(0,0,0,0.2)), url("../figs/background_grass.jpg") no-repeat center center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    color: white; 
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1, header h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 10px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #84dd88;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #c8e6c9;
+}
+
+.nav-links img{
+    padding-right: 4px;
+}
+
+
+h2{
+    font-family:'Trebuchet MS';
+    text-align: center;
+}
+
+h3{
+    font-family:'Trebuchet MS';
+    text-align: center;
+    font-size: 125%;
+}
+
+.container{
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input{
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+}
+
+button{
+    width: 95%;
+    align-self: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.container a{
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+footer{
+    background: #84dd88;
+    color: rgb(54, 54, 54); 
+    padding: 10px;
+    text-align: center;
+    font-size: 80%;  
+    margin-top: 25px;         
+}
+
+footer a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cont_footer{
+    font-family: Arial;
+    padding: 10px;
+    display: block;
+    gap: 0;
+}
+    
+.cont_footer a{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Apenas para a pagina admin.html */
+
+@media (max-width: 600px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
+
+#pesquisa {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#nome{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#email{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+main.li {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+main > input[type=\"text\"]:last-of-type {
+  margin-bottom: 20px;
+}

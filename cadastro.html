@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - Guia Sustentável</title>
+  <link rel="stylesheet" href="css/stylecad.css" />
+</head>
+
+<body>
+  <header>
+    <h1>EcoGuia Procopense</h1>
+    <br>
+    <h2>Encontre a ecologia em Cornélio</h2>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+          <li>
+            <figure>
+              <img src="figs/home_icon.svg" alt="Icone Início" width="13" height="13">
+              <a href="index.html">Início</a>
+            </figure>
+          </li>  
+          <li>
+            <figure>
+              <img src="figs/localization_icon.svg" alt="Icone Local" width="13" height="13">
+              <a href="index.html">Locais Sustentáveis</a>
+            </figure>
+          </li> 
+          <li>
+            <figure>
+              <img src="figs/about_us_icon.svg" alt="Icone Sobre" width="13" height="13">
+              <a href="#sobre">Sobre</a>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="figs/contact.svg" alt="Icone Contato" width="13" height="13">
+              <a href="#contato"s>Contato</a>
+            </figure>
+          </li>
+        </ul>
+      </nav>
+    
+  </header>
+  <main>
+      <div class="container">
+        <h2>Cadastro</h2>
+        <form id="cadastroForm">
+          <input type="text" placeholder="Nome completo" required />
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Endereço ou bairro" required />
+          <input type="tel" placeholder="Telefone" required />
+          <input type="password" placeholder="Senha" required />
+        <button type="submit">Cadastrar</button>
+      </form>
+      <a href="login.html">Já tem uma conta? Login</a>
+    </div>
+    <script>
+    document.getElementById('cadastroForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // salvar dados simulados no localStorage
+      const inputs = this.querySelectorAll('input');
+      const user = {
+        nome: inputs[0].value,
+        email: inputs[1].value,
+        endereco: inputs[2].value,
+        telefone: inputs[3].value,
+        senha: inputs[4].value
+      };
+      localStorage.setItem('usuario', JSON.stringify(user));
+      alert('Cadastro realizado com sucesso!');
+      window.location.href = 'login.html';
+    });
+  </script>
+
+  </main>
+  
+  <footer>
+    <div class="cont_footer">
+      <a href="https://gtagenda2030.org.br/ods/">Objetivos ODS</a>
+      <a href="https://gtagenda2030.org.br/ods/ods11/">Sobre a ODS 11</a>
+      <a href="curriculum.html">Curriculum Vitae</a>
+    </div>
+    <p>Cornélio Procópio - 2025</p>
+  </footer>
+
+</body>
+</html>
